@@ -122,28 +122,35 @@
   </section>
   <section class="container" id="contato">
     <h1 class="titulo-secao">entre em contato</h1>
-    <div>
-      <div>
-        <img src="https://via.placeholder.com/400" alt="" />
+    <div class="content">
+      <div class="flex">
+        <div>
+          <img src="imagens/mapa.jpg" alt="" />
+        </div>
+        <div class="contatos">
+          <div>
+            <h2>endereço</h2>
+            <p>Av. Carlos Capriotti, 123 - Centro Barueri - SP</p>
+          </div>
+          <div>
+            <h2>telefone</h2>
+            <p>(11) 4198-3121</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <h2>endereço</h2>
-        <p>Av. Carlos Capriotti, 123 - Centro Barueri - SP</p>
-      </div>
-      <div>
-        <h2>telefone</h2>
-        <p>(11) 4198-3121</p>
-      </div>
+      <form class="flex" action="none">
+        <h3>envie um email</h3>
+        <label for="email">Email </label>
+        <input type="email" id="email" />
+        <label for="mensagem">Mensagem </label>
+        <textarea id="mensagem" cols="20" rows="10"> </textarea>
+        <button id="form-btn">enviar mensagem</button>
+      </form>
     </div>
-    <form>
-      <h3>envie um email</h3>
-      <label for="email">Email </label>
-      <input type="email" id="email" />
-      <label for="mensagem">Mensagem </label>
-      <textarea id="mensagem" cols="20" rows="10"> </textarea>
-      <button>enviar mensagem</button>
-    </form>
+
+
   </section>
+  <script src="script.js"></script>
 </body>
 
 </html>
