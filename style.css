@@ -4,7 +4,7 @@ a {
 
 .container {
   max-width: 1080px;
-  margin: 0 auto 120px auto;
+  margin: 0 auto;
 }
 
 .titulo-secao {
@@ -27,7 +27,7 @@ p {
 #introducao {
   /* height: 100vh; */
   padding-top: 150px;
-  padding-bottom: 250px;
+  padding-bottom: 200px;
 }
 
 #introducao h1 {
@@ -75,6 +75,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 60px;
 }
 
 /* #trabalho div {
@@ -100,17 +101,102 @@ p {
   text-transform: uppercase;
 }
 
+#esforco {
+  margin-top: 120px;
+}
+
 #esforco h1,
 #esforco p {
   text-align: center;
 }
 
 #esforco p {
-  max-width: 50%;
+  max-width: 75%;
   margin: 0 auto;
 }
-
-/* #esforco {
+#esforco .objetivos {
+  margin-top: 30px;
   display: flex;
-  flex-direction: column;
-} */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#esforco .objetivos img {
+  border-radius: 5px;
+}
+
+#mudanca {
+  margin-top: 120px;
+}
+
+#mudanca > h1 {
+  text-align: center;
+}
+
+#mudanca .thumbnail-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#mudanca .thumbnail-holder .thumbnail {
+  flex: 1 1 300px;
+}
+
+#mudanca .thumbnail-holder .thumbnail {
+  width: 300px;
+  max-width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+  border-radius: 15px;
+}
+#mudanca .thumbnail-holder .thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+#mudanca .thumbnail-holder .thumbnail > header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 20px;
+}
+
+#mudanca .thumbnail-holder .thumbnail > header::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  border-radius: 5px;
+}
+
+#mudanca .thumbnail-holder .thumbnail > header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.02),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)
+  );
+}
+#mudanca .thumbnail-holder .thumbnail > header > h1 {
+  max-width: 260px;
+  margin: 0;
+  color: white;
+  position: relative;
+  z-index: 1;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #fff;
+}
