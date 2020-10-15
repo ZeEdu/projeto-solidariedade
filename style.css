@@ -1,0 +1,116 @@
+a {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto 120px auto;
+}
+
+.titulo-secao {
+  font-family: "Roboto Slab", serif;
+  color: #25292f;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #717070;
+}
+
+#introducao {
+  /* height: 100vh; */
+  padding-top: 150px;
+  padding-bottom: 250px;
+}
+
+#introducao h1 {
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+#introducao p {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  max-width: 350px;
+  margin-bottom: 15px;
+}
+
+#introducao button {
+  font-family: "Roboto", sans-serif;
+  background: #b20000;
+  padding: 20px 40px;
+  border-radius: 50px;
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+}
+#introducao button:hover {
+  cursor: pointer;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("imagens/hero.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#trabalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* #trabalho div {
+  max-width: 512px;
+} */
+
+#trabalho .illustration img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+#trabalho .flex {
+  flex: 1;
+}
+
+#trabalho .content-holder .content h1 {
+  font-family: "Roboto Slab", serif;
+  color: #25292f;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#esforco h1,
+#esforco p {
+  text-align: center;
+}
+
+#esforco p {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+/* #esforco {
+  display: flex;
+  flex-direction: column;
+} */
