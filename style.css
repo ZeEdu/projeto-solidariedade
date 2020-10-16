@@ -3,7 +3,7 @@ a {
 }
 
 .container {
-  max-width: 1080px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -114,6 +114,7 @@ p {
   max-width: 75%;
   margin: 0 auto;
 }
+
 #esforco .objetivos {
   margin-top: 30px;
   display: flex;
@@ -123,6 +124,8 @@ p {
 
 #esforco .objetivos img {
   border-radius: 5px;
+  width: 180px;
+  height: auto;
 }
 
 #mudanca {
@@ -144,9 +147,9 @@ p {
 }
 
 #mudanca .thumbnail-holder .thumbnail {
-  width: 300px;
-  max-width: 300px;
-  height: 300px;
+  width: 100%;
+  max-width: 330px;
+  height: auto;
   position: relative;
   overflow: hidden;
   margin: 20px 0;
@@ -154,6 +157,7 @@ p {
 }
 #mudanca .thumbnail-holder .thumbnail img {
   width: 100%;
+  max-width: 330px;
   height: 100%;
 }
 
@@ -201,6 +205,10 @@ p {
   color: #fff;
 }
 
+#contato {
+  margin-top: 60px;
+}
+
 #contato > h1 {
   text-align: center;
 }
@@ -219,6 +227,31 @@ p {
 
 #contato > .content > div > .contatos > div {
   flex: 1;
+}
+
+#contato .mapa img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+#contato > .content > div > .contatos > div > h2 {
+  font-family: "Roboto Slab", serif;
+  color: #25292f;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#contato > .content > div > .contatos > div > p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #25292f;
+  text-transform: uppercase;
 }
 
 #contato > .content > form {
@@ -245,6 +278,10 @@ p {
   margin-top: 20px;
 }
 
+#contato > .content > form > label:first-child {
+  margin-top: 0;
+}
+
 #contato > .content > form > input,
 #contato > .content > form > textarea {
   background-color: #e5e5e5;
@@ -266,4 +303,116 @@ p {
   border: none;
   height: 50px;
   margin-top: 20px;
+}
+
+footer {
+  width: 100%;
+  height: 120px;
+}
+
+/* 
+    < 576px ( tratar como se fosse 360px)
+
+    576px > x <= 768px ( tratar como se fosse 576px)
+
+    768px > x <= 990px ( tratar como se fosse 768px)
+    
+    990px > ( tratar como se fosse 990px)
+*/
+
+@media screen and (max-width: 575px) {
+  body {
+    width: 100%;
+    max-width: 575px;
+  }
+  .container {
+    margin: 0 auto;
+    max-width: 360px;
+    width: 100%;
+  }
+
+  .hero-image {
+    display: block;
+    width: 100%;
+  }
+
+  #trabalho .illustration {
+    display: none;
+  }
+
+  #esforco {
+    margin-top: 60px;
+  }
+
+  #esforco h1 {
+    text-align: left;
+  }
+  #esforco p {
+    text-align: left;
+    max-width: 100%;
+  }
+
+  #esforco .objetivos {
+    flex-basis: 180px;
+  }
+
+  #esforco .objetivos img {
+    width: 100%;
+    height: auto;
+    margin: 5px auto;
+  }
+
+  #mudanca {
+    margin-top: 60px;
+  }
+
+  #mudanca h1 {
+    text-align: left;
+  }
+
+  #mudanca .thumbnail-holder .thumbnail {
+    width: 100%;
+    max-width: 100%;
+  }
+  #mudanca .thumbnail-holder .thumbnail img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #contato > h1 {
+    text-align: left;
+  }
+
+  #contato > .content {
+    flex-direction: column;
+  }
+
+  #contato .mapa img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  #contato > .content > div > .contatos {
+    flex-direction: column;
+  }
+
+  #contato > .content > div > .contatos #contato > .content > form {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  body {
+    background-color: lavender;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-color: aquamarine;
+  }
+}
+
+@media screen and (min-width: 1023px) {
 }
