@@ -1,3 +1,6 @@
+:root {
+  --gutter: 20px;
+}
 a {
   scroll-behavior: smooth;
 }
@@ -368,18 +371,79 @@ figcaption {
   height: auto;
 }
 
+.compartilhe-section > span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+  color: #25292f;
+}
+
 .compartilhe {
-  display: flexbox;
-  flex-direction: row;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 .compartilhe .rede-social {
-  width: 45px;
-  height: auto;
-  padding: 5px;
-  margin: 0 5px;
+  max-width: 50px;
+  padding: 0 5px;
+  margin: 0;
+  text-align: left;
   flex: 1;
-  display: block;
 }
+
+.outras-historias {
+  padding: var(--gutter) 0;
+  display: grid;
+  grid-gap: var(--gutter) 0;
+  grid-template-columns: var(--gutter) 1fr var(--gutter);
+  align-content: start;
+}
+
+.outras-historias > * {
+  grid-column: 2 / -2;
+}
+
+.outras-historias > .full {
+  grid-column: 1 / -1;
+}
+
+.hs {
+  display: flex;
+  grid-gap: calc(var(--gutter) / 2);
+  grid-template-columns: 10px;
+  grid-template-rows: minmax(150px, 1fr);
+  grid-auto-flow: column;
+  grid-auto-columns: calc(50% - var(--gutter) * 2);
+
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  padding-bottom: calc(0.75 * var(--gutter));
+  margin-bottom: calc(-0.25 * var(--gutter));
+}
+
+.outras-historias .thumbnail {
+  position: relative;
+}
+
+.outras-historias .thumbnail > header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 210px;
+  padding: 20px;
+}
+
+.outras-historias .thumbnail > header > h1 {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 400;
+  color: #fff;
+}
+
 /* 
     < 576px ( tratar como se fosse 360px)
 
