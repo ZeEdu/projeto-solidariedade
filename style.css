@@ -126,6 +126,7 @@ p {
   border-radius: 5px;
   width: 180px;
   height: auto;
+  margin: 5px 0;
 }
 
 #mudanca {
@@ -311,6 +312,75 @@ footer {
 }
 
 /* 
+Article 
+ */
+
+/* article {
+  margin: 0 0 32px 0;
+} */
+
+.article-data {
+  background-color: #c4c4c4;
+  padding: 10px;
+  color: #25292f;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  margin-bottom: 32px;
+}
+
+.article-title {
+  font-family: "Roboto Slab", serif;
+  color: #25292f;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+article > p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #25292f;
+}
+
+article > p.article-call {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+figure {
+  margin: 0 0 16px 0;
+  width: 100%;
+}
+
+figcaption {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #25292f;
+}
+
+.article-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.compartilhe {
+  display: flexbox;
+  flex-direction: row;
+}
+.compartilhe .rede-social {
+  width: 45px;
+  height: auto;
+  padding: 5px;
+  margin: 0 5px;
+  flex: 1;
+  display: block;
+}
+/* 
     < 576px ( tratar como se fosse 360px)
 
     576px > x <= 768px ( tratar como se fosse 576px)
@@ -320,10 +390,12 @@ footer {
     990px > ( tratar como se fosse 990px)
 */
 
-@media screen and (max-width: 575px) {
-  body {
+@media screen and (max-width: 360px) {
+}
+@media screen and (min-width: 361px) and (max-width: 575px) {
+  .home-page {
     width: 100%;
-    max-width: 575px;
+    /* max-width: 575px; */
   }
   .container {
     margin: 0 auto;
@@ -400,17 +472,115 @@ footer {
   #contato > .content > div > .contatos #contato > .content > form {
     max-width: 100%;
   }
+
+  #contato > .content > form {
+    max-width: 100%;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  body {
-    background-color: lavender;
+  .home-page {
+    width: 100%;
+    max-width: 767px;
+  }
+  .container {
+    margin: 0 auto;
+    width: 520px;
+  }
+
+  #trabalho .illustration {
+    display: none;
+  }
+
+  #esforco h1 {
+    text-align: left;
+  }
+  #esforco p {
+    text-align: left;
+    max-width: 100%;
+  }
+
+  #esforco .objetivos img {
+    width: 150px;
+  }
+
+  #mudanca .thumbnail-holder .thumbnail {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  #mudanca .thumbnail-holder .thumbnail img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  #contato > .content {
+    flex-direction: column;
+  }
+
+  #contato > .content > form {
+    max-width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  body {
-    background-color: aquamarine;
+  .home-page {
+    width: 100%;
+    max-width: 1023px;
+  }
+  .container {
+    margin: 0 auto;
+    width: 720px;
+  }
+
+  #trabalho .illustration {
+    display: none;
+  }
+
+  #esforco {
+    margin-top: 60px;
+  }
+
+  #esforco h1 {
+    text-align: left;
+  }
+  #esforco p {
+    text-align: left;
+    max-width: 100%;
+  }
+
+  #esforco .objetivos img {
+    width: 120px;
+  }
+
+  #mudanca {
+    margin-top: 60px;
+  }
+
+  #mudanca .thumbnail-holder .thumbnail > header > h1 {
+    max-width: 180px;
+  }
+
+  #mudanca .thumbnail-holder .thumbnail {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  #mudanca .thumbnail-holder .thumbnail img {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  #contato .mapa img {
+    max-width: 100%;
+  }
+
+  #contato > .content {
+    flex-direction: column;
+  }
+
+  #contato > .content > form {
+    max-width: 100%;
   }
 }
 
