@@ -346,6 +346,7 @@ article > p {
   font-weight: 400;
   line-height: 1.5;
   color: #25292f;
+  max-width: 560px;
 }
 
 article > p.article-call {
@@ -355,6 +356,7 @@ article > p.article-call {
 figure {
   margin: 0 0 16px 0;
   width: 100%;
+  max-width: 720px;
 }
 
 figcaption {
@@ -423,8 +425,21 @@ figcaption {
   margin-bottom: calc(-0.25 * var(--gutter));
 }
 
+.hs.full {
+  margin-left: 20px;
+}
+
 .outras-historias .thumbnail {
   position: relative;
+  border-radius: 15px;
+}
+
+/* div.hs.full::-webkit-scrollbar-thumb {
+  background: red;
+} */
+
+.outras-historias .thumbnail > img {
+  border-radius: 15px;
 }
 
 .outras-historias .thumbnail > header {
@@ -433,6 +448,7 @@ figcaption {
   left: 0;
   width: 210px;
   padding: 20px;
+  border-radius: 15px;
 }
 
 .outras-historias .thumbnail > header > h1 {
@@ -442,6 +458,23 @@ figcaption {
   line-height: 1;
   font-weight: 400;
   color: #fff;
+  margin: 0;
+  z-index: 1;
+}
+
+.outras-historias .thumbnail > header::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.02),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)
+  );
+  border-radius: 15px;
 }
 
 /* 
@@ -649,4 +682,9 @@ figcaption {
 }
 
 @media screen and (min-width: 1023px) {
+  .container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+  }
 }
