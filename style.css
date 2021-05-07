@@ -154,7 +154,7 @@ p {
 
 #mudanca .thumbnail-holder .thumbnail {
   width: 100%;
-  max-width: 330px;
+  max-width: 300px;
   height: auto;
   position: relative;
   overflow: hidden;
