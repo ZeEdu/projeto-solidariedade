@@ -8,6 +8,8 @@ a {
 .container {
   max-width: 1024px;
   margin: 0 auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .titulo-secao {
@@ -67,7 +69,7 @@ p {
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("imagens/hero.jpg");
-  height: 50%;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -293,6 +295,7 @@ p {
   border: 1px solid #e5e5e5;
   padding: 12px 20px;
   margin-top: 10px;
+  resize: none;
 }
 
 #contato > .content > form > button {
@@ -314,8 +317,8 @@ footer {
   height: 120px;
 }
 
-/* 
-Article 
+/*
+Article
  */
 
 /* article {
@@ -477,26 +480,67 @@ figcaption {
   border-radius: 15px;
 }
 
-/* 
+/*
     < 576px ( tratar como se fosse 360px)
 
     576px > x <= 768px ( tratar como se fosse 576px)
 
     768px > x <= 990px ( tratar como se fosse 768px)
-    
+
     990px > ( tratar como se fosse 990px)
 */
 
 @media screen and (max-width: 360px) {
+  /* #introducao {
+    margin-top: 0;
+  } */
+  .container {
+    margin: 0 auto;
+    max-width: 320px;
+    width: 100%;
+  }
+
+  #trabalho {
+    flex-direction: column;
+  }
+
+  #esforco .objetivos img {
+    width: 100%;
+    height: auto;
+    margin: 5px auto;
+  }
+
+  #contato > .content {
+    flex-direction: column;
+  }
+
+  #contato > .content > div > .contatos #contato > .content > form {
+    max-width: 100%;
+  }
+
+  #contato > .content > form {
+    max-width: 100%;
+  }
+
+  /* #contato > .content > div > .contatos #contato > .content > form {
+    max-width: 100%;
+  }
+
+  #contato > .content > form {
+    max-width: 100%;
+  } */
 }
 @media screen and (min-width: 361px) and (max-width: 575px) {
+  /* #introducao {
+    margin-top: 0;
+  } */
   .home-page {
     width: 100%;
     /* max-width: 575px; */
   }
   .container {
     margin: 0 auto;
-    max-width: 360px;
+    max-width: 340px;
     width: 100%;
   }
 
